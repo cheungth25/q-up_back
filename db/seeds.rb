@@ -5,9 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-john = User.create(first_name:'John', last_name:'Doe', email:'john@gmail.com', email_confirmation:'john@gmail.com', password:'abc123', password_confirmation:'abc123')
-jane = User.create(first_name:'Jane', last_name:'Smith', email:'jane@gmail.com', email_confirmation:'jane@gmail.com', password:'abc123', password_confirmation:'abc123')
-billy = User.create(first_name:'Billy', last_name:'Bob', email:'billy@gmail.com', email_confirmation:'billy@gmail.com', password:'abc123', password_confirmation:'abc123')
+john = User.create(first_name:'John', last_name:'Doe', email:'john@gmail.com', email_confirmation:'john@gmail.com', phone: 1234567890, password:'abc123', password_confirmation:'abc123')
+jane = User.create(first_name:'Jane', last_name:'Smith', email:'jane@gmail.com', email_confirmation:'jane@gmail.com', phone: 7180987654, password:'abc123', password_confirmation:'abc123')
+billy = User.create(first_name:'Billy', last_name:'Bob', email:'billy@gmail.com', email_confirmation:'billy@gmail.com', phone: 6461234567, password:'abc123', password_confirmation:'abc123')
 
 line1 = Line.create(name:'line1', code:'abc', host:john)
 line2 = Line.create(name:'line2', code:'xyz', host:jane)

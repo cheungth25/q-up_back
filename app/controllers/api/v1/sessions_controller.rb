@@ -9,7 +9,7 @@ class Api::V1::SessionsController < ApplicationController
       token = issue_token(payload)
       render json: { jwt: token }
     else
-      render json: { message: "Not authorized" }
+      render json: { status: 401, message: "Not authorized" }
     end
   end
 

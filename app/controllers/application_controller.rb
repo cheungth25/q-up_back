@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorized
-    render json: { message: "Not authorized" }, status: 404 unless logged_in?
+    render json: { status: 401, message: "Unauthorized" } unless logged_in?
   end
 
 end
